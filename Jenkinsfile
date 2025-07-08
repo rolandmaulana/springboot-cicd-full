@@ -63,16 +63,16 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            script {
-                def message = "Pipeline selesai: Build #${env.BUILD_NUMBER} - Status: ${currentBuild.currentResult}"
-                sh """
-                    curl -s -X POST https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage \
-                        -d chat_id=${TELEGRAM_CHAT_ID} \
-                        -d text="${message}"
-                """
-            }
-        }
-    }
+    // post {
+    //     always {
+    //         script {
+    //             def message = "Pipeline selesai: Build #${env.BUILD_NUMBER} - Status: ${currentBuild.currentResult}"
+    //             sh """
+    //                 curl -s -X POST https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage \
+    //                     -d chat_id=${TELEGRAM_CHAT_ID} \
+    //                     -d text="${message}"
+    //             """
+    //         }
+    //     }
+    // }
 }
