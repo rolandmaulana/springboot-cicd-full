@@ -4,8 +4,8 @@ pipeline {
     environment {
         DOCKER_IMAGE = "rolandmaulana/springboot-cicd-full:latest"
         REGISTRY_CREDENTIALS = '20310e4b53924a06884d51f68ac9254c'   // Buat credentials ini di Jenkins
-        TELEGRAM_BOT_TOKEN = credentials('t8161018250:AAEChR_GmId41XjMsj4__YPVqrIXqIZd4Ns')
-        TELEGRAM_CHAT_ID = '5850915085' 
+        //TELEGRAM_BOT_TOKEN = credentials('t8161018250:AAEChR_GmId41XjMsj4__YPVqrIXqIZd4Ns')
+        //TELEGRAM_CHAT_ID = '5850915085' 
         SONARQUBE_ENV = 'MySonarQube'  // nama SonarQube server di Jenkins config
         GOOGLE_PROJECT_ID = 'rakamin-ttc-odp-it-1'
     }
