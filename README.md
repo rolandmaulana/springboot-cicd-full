@@ -1,3 +1,26 @@
+# springboot-cicd-full
+
+📦 Spring Boot app dengan CI/CD: Jenkins, SonarQube, Docker, Terraform, deploy ke Google Cloud Run
+
+✅ Pipeline:
+- Clone repository
+- Unit test & build (Maven)
+- Static analysis (SonarQube)
+- Build & push Docker image ke Docker Hub
+- Deploy ke Cloud Run dengan Terraform
+- Notifikasi via Telegram
+
+## 🚀 Docker Hub
+https://hub.docker.com/r/rolandmaulana/springboot-cicd-full
+
+## ☁️ GCP Project
+rakamin-ttc-odp-it-1
+
+## 📦 Nama App
+springboot-cicd-full
+
+
+
 # Spring Boot Rest API unit testing with Junit 5, Mockito, Maven
 Apply Spring Boot <code>@WebMvcTest</code> for Rest Controller Unit Test with JUnit 5 and Mockito.
 
